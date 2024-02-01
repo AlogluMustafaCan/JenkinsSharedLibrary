@@ -1,0 +1,14 @@
+metadata:
+  labels:
+    name: builder
+spec:
+  containers:
+  - name: python3
+    image: python:3.10
+    imagePullPolicy: IfNotPresent
+    args:
+    - "cat"
+    command:
+    - "/bin/sh"
+    - "-c"
+    tty: true
